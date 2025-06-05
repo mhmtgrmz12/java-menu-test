@@ -19,7 +19,7 @@ jobs:
       - run: mvn package
       - uses: actions/upload-artifact@v4
         with:
-          name: my-jar
+          name: zipped-project-jar-file
           path: target/*.jar
 
 
@@ -32,7 +32,7 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: zipped-project
+          name: zipped-project-jar-file
           path: build
       - name: zip artifact
         run: zip -r build.zip build/
