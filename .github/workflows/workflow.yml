@@ -13,6 +13,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
+          distribution: 'adopt'
       - run: mvn compile
       - run: mvn test
       - run: mvn package
