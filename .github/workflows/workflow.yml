@@ -22,7 +22,6 @@ jobs:
           name: zipped-project-jar-file
           path: target/*.jar
 
-
   release:
     runs-on: ubuntu-latest
     permissions:
